@@ -1,0 +1,42 @@
+.root {
+  position: relative;
+  left: -120px;
+  .input {
+    border: 1px solid rgba(0,0,0,.15);
+    padding: 12px 20px 12px 48px;
+    width: 350px;
+    border-radius: 12px;
+    font-size: 18px;
+    @media screen and (max-width: 639px){
+      margin-bottom: 15px;
+    }
+    &:focus {
+      border: 1px solid rgba(0,0,0,.3);
+    }
+  }
+  .ico {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    opacity: 60%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    &:hover {
+      opacity: 75%;
+    }
+  }
+  .clear {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 60%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    &:hover {
+      opacity: 75%;
+    }
+  }
+}

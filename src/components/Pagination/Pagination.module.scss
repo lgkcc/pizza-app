@@ -1,0 +1,32 @@
+@import "src/scss/variables";
+.pagination {
+  margin-top: 20px;
+  ul {
+    display: flex;
+    :global {
+      .selected {
+        background: $orange;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    li {
+      margin-right: 6px;
+      border-radius: 100%;
+      padding: 2px 0;
+      box-shadow: 0 0 0 1px $orange;
+      cursor: pointer;
+      a {
+        padding: 10px;
+        color: $orange;
+      }
+      &:hover {
+        background: $orange;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
